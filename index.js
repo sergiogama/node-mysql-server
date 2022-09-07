@@ -5,6 +5,8 @@ const cors = require("cors");
 const app = express();
 const mysql = require("mysql");
 
+const PORT = process.env.PORT || 3001;
+
 /*
 const db = mysql.createPool({
     host: "127.0.0.1",
@@ -102,8 +104,8 @@ app.get('/nome', (req, res)=> {
 })
 
 app.listen(process.env.PORT || PORT, () => {
-//    console.log(`running on port ${PORT}`);
-    console.log("running!!");
+    console.log(`running on port ${PORT}`);
+//    console.log("running!!");
 });
 
 /*
