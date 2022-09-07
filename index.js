@@ -5,12 +5,14 @@ const cors = require("cors");
 const app = express();
 const mysql = require("mysql");
 
+/*
 const db = mysql.createPool({
     host: "127.0.0.1",
     user: "root",
     password: "Su200118$",
     database: "innovatalk"
 });
+*/
 
 app.use(cors());
 app.use(express.json());
