@@ -1,3 +1,13 @@
+// schema MySql
+// CREATE SCHEMA `innovatalk` DEFAULT CHARACTER SET latin1 COLLATE latin1_general_ci ;
+// Create table
+/* CREATE TABLE `clientes` (
+  `id` int NOT NULL,
+  `nome` varchar(50) COLLATE latin1_general_ci NOT NULL,
+  `telefone` varchar(15) COLLATE latin1_general_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_general_ci;
+*/
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -7,14 +17,12 @@ const mysql = require("mysql");
 
 const PORT = process.env.PORT || 3001;
 
-/*
 const db = mysql.createPool({
-    host: "127.0.0.1",
-    user: "root",
-    password: "Su200118$",
-    database: "innovatalk"
+    host: process.env.DB_URL || "127.0.0.1",
+    user: process.env.DB_USER || "root",
+    password: process.env.PASSWORD || "Su200118$",
+    database: process.env.DB_NAME || "innovatalk"
 });
-*/
 
 app.use(cors());
 app.use(express.json());
