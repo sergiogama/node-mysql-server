@@ -53,6 +53,7 @@ CREATE TABLE `clientes` (
 app.get('/db', (req, res)=> {
     const sqlInsert = "INSERT INTO clientes (id, nome, telefone) VALUES (2,'Serginho Gama', '11-99999-9999');"
     db.query(sqlInsert, (err,result)=> {
+        res.send(result);
         console.log(result);
     })
 });
