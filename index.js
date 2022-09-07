@@ -99,6 +99,12 @@ app.get('/nome', (req, res)=> {
     res.send("The Sergio Gama");
 })
 
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`running on port ${PORT}`);
+});
+
+/*
 app.listen(3001, () => {
     console.log("running on port 3001");
 });
+*/
