@@ -102,7 +102,8 @@ app.get('/nome', (req, res)=> {
 })
 
 app.listen(process.env.PORT || PORT, () => {
-    console.log(`running on port ${PORT}`);
+//    console.log(`running on port ${PORT}`);
+    console.log("running!!");
 });
 
 /*
