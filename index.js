@@ -24,6 +24,8 @@ const db = mysql.createPool({
     database: process.env.DB_NAME || "innovatalk"
 });
 
+console.log(process.env.DB_PASSWORD);
+
 app.use(cors());
 app.use(express.json());
 app.use(bodyParser.urlencoded({extended: true}));
