@@ -8,7 +8,7 @@ eploy on Heroku
 - After follow the guidance on Heroku page
   - cd <Appliation folder>
   - git init
-  - heroku git:remote -a <application name>
+  - heroku git:remote -a {application name} 
   - git add .
   - git commit -am "make it better"
   - git push heroku master
