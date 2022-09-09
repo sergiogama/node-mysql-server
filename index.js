@@ -111,8 +111,8 @@ app.get('/', (req, res)=> {
 })
 
 app.get('/nome', (req, res)=> {
-    res.send("This is Sergio Gama");
-    console.log("Aqui: " + process.env.DB_PASSWORD);
+    res.send("This is Sergio Gama " + process.env.DB_PASSWORD);
+    //console.log("Aqui: " + process.env.DB_PASSWORD);
 })
 
 app.listen(process.env.PORT || PORT, () => {
