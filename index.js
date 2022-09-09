@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3001;
 const db = mysql.createPool({
     host: process.env.DB_URL || "127.0.0.1",
     user: process.env.DB_USER || "root",
-    password: process.env.DB_PASSWORD || "Su200118$",
+    password: process.env.DB_PASSWORD || "********",
     database: process.env.DB_NAME || "innovatalk"
 });
 
