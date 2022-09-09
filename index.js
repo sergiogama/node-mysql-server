@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 3001;
 const db = mysql.createPool({
     host: process.env.DB_URL || "127.0.0.1",
     user: process.env.DB_USER || "root",
-    password: process.env.DB_PASSWORD || "Su200118$",
+    password: process.env.DB_PASSWORD || "********",
     database: process.env.DB_NAME || "innovatalk"
 });
 
@@ -125,4 +125,7 @@ app.listen(3001, () => {
     console.log("running on port 3001");
 });
 */
+<<<<<<< HEAD
 
+=======
+>>>>>>> cc8240c346a8c028c9216b4d4928cdb3f4555cb7
