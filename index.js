@@ -24,7 +24,7 @@ const db = mysql.createPool({
     database: process.env.DB_NAME || "innovatalk"
 });
 
-console.log("Aqui " + process.env.DB_PASSWORD);
+//console.log("Aqui " + process.env.DB_PASSWORD);
 
 app.use(cors());
 app.use(express.json());
@@ -111,7 +111,7 @@ app.get('/', (req, res)=> {
 })
 
 app.get('/nome', (req, res)=> {
-    res.send("This is Sergio Gama " + process.env.DB_PASSWORD);
+    res.send("This is Sergio Gama " + process.env.DB_URL);
     //console.log("Aqui: " + process.env.DB_PASSWORD);
 })
 
