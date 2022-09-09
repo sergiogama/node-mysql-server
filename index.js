@@ -111,7 +111,7 @@ app.get('/', (req, res)=> {
 })
 
 app.get('/nome', (req, res)=> {
-    res.send("The Sergio Gama");
+    res.send("This is Sergio Gama");
     console.log(process.env.DB_PASSWORD);
 })
 
