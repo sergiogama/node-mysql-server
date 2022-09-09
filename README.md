@@ -12,4 +12,4 @@ eploy on Heroku
   - git add .
   - git commit -am "make it better"
   - git push heroku master
-P.S.: always you update something execute the last 3 steps once again
+- P.S.: always you update something execute the last 3 steps once again
